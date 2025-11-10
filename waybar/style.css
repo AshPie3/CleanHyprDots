@@ -1,0 +1,149 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Momo Trust Display", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    min-height: 0;
+}
+
+window#waybar {
+
+    background-color: @background;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.22)
+   
+}
+
+tooltip {
+    background:@background;
+    border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+  color: white;
+}
+
+#custom-notification {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "NotoSansMono Nerd Font";
+}
+
+#custom-menu {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "NotoSansMono Nerd Font";
+}
+
+#workspaces {
+    min-width: 0px;
+}
+
+#workspaces button {
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: @primary;
+    color: #121212;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background:linear-gradient(90deg, @primary 0%, @on_primary_fixed_variant 100%);;
+    border-radius: 9999px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all 0.3s ease-in-out;
+
+    
+}
+
+#pulseaudio {
+    padding: 10px;
+}
+
+#pulseaudio-slider {
+    padding: 0;
+    margin: 5px;
+}
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 100px;
+    border-radius: 5px;
+    background: @outline_variant;
+}
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, @on_tertiary_fixed 0%, @on_tertiary 100%);
+    
+}
+
+#clock {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 5px;
+    border-radius: 100px;
+    background-color: @primary;
+    color: #121212;
+}
+
+#mpris {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 5px;
+    border-radius: 100px;
+    background-color: @primary;
+    color: #121212;
+}
+
+#bluetooth {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+
+#network {
+    padding-right: 15px;
+    padding-left: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#custom-weather {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 5px;
+    border-radius: 100px;
+    background-color: @primary;
+    color: #121212;
+}
+
+#custom-niflveil {
+    padding: 0 15px;
+    color: @primary;
+}
+
+#custom-niflveil.empty {
+    color: #4c566a;
+}
+
+
+
+
+
+
+
+
+

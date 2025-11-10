@@ -1,0 +1,73 @@
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+/* wallust-wlogout */
+
+/* Importing wallust colors */
+@import 'colors.css';
+
+window {
+    font-size: 24pt;
+    color: @primary; /* text */
+    background-color: alpha(@background, 0.5);
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-color: alpha(@on_tertiary, 0.5);
+    animation: gradient_f 10s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    border-radius: 80px;
+	border: 20px;
+    border-style: solid;
+    border: 10px solid  @outline;
+    margin: 20px;
+	outline-style: none;
+}
+
+button:focus {
+    background-color: alpha(@on_tertiary_fixed, 0.5) ;
+	outline-style: none;
+	
+
+}
+
+button:hover {
+    background-size: 35%;
+    outline-style: none;
+}
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1.2em; /* Increase the font size */
+}
+
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+}
+
+
+#suspend {
+    background-image: image(url("./icons/suspend.png"));
+}
+
+
+#shutdown {
+    background-image: image(url("./icons/shutdown.png"));
+}
+
+
+#reboot {
+    background-image: image(url("./icons/reboot.png"));
+}
+
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
+

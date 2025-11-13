@@ -5,16 +5,16 @@
 @import 'colors.css';
 
 window {
-    font-size: 24pt;
+    font-size: 20pt;
     color: @primary; /* text */
-    background-color: alpha(@background, 0.5);
+    background-color: alpha(@background, 0.7);
 }
 
 button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20%;
-    background-color: alpha(@on_tertiary, 0.5);
+    background-color: alpha(@on_primary, 0.5);
     animation: gradient_f 10s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
     border-radius: 80px;
@@ -26,7 +26,7 @@ button {
 }
 
 button:focus {
-    background-color: alpha(@on_tertiary_fixed, 0.5) ;
+    background-color: alpha(@on_primary_fixed, 0.5) ;
 	outline-style: none;
 	
 

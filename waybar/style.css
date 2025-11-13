@@ -9,35 +9,31 @@
 }
 
 window#waybar {
-
-    background-color: @background;
+    background-color: alpha(@background, 0.85);
     box-shadow: 0 10px 24px rgba(0,0,0,0.22)
    
 }
 
 tooltip {
-    background:@background;
+    background: alpha(@background, 0.8);;
     border: 1px solid rgba(100, 114, 125, 0.5);
+    border-radius: 10px;
 }
 
 tooltip label {
-  color: white;
-}
-
-#custom-notification {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: "NotoSansMono Nerd Font";
+  color: @on_surface;
 }
 
 #custom-menu {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 25px;
     font-family: "NotoSansMono Nerd Font";
 }
 
 #workspaces {
     min-width: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #workspaces button {
@@ -46,27 +42,59 @@ tooltip label {
     padding-right: 15px;
     background: @primary;
     color: #121212;
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
     background:linear-gradient(90deg, @primary 0%, @on_primary_fixed_variant 100%);;
     border-radius: 9999px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 18px;
+    padding-right: 18px;
     transition: all 0.3s ease-in-out;
 
     
 }
 
-#pulseaudio {
-    padding: 10px;
+#mpris {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 5px;
+    border-radius: 13px;
+    border: 3px solid @on_secondary_fixed_variant;
+
 }
 
+#clock {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 5px;
+    border-radius: 100px;
+    background-color: @primary;
+    color: @background;
+}
+
+
+#custom-weather {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 5px;
+    border-radius: 100px;
+    background-color: @primary;
+    color: @background;
+}
+
+
+
+#custom-niflveil.empty {
+    color: @on_surface;
+}
 #pulseaudio-slider {
     padding: 0;
-    margin: 5px;
+    margin-right: 10px;
 }
 #pulseaudio-slider slider {
     min-height: 0px;
@@ -89,55 +117,35 @@ tooltip label {
     
 }
 
-#clock {
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 5px;
-    border-radius: 100px;
-    background-color: @primary;
-    color: #121212;
+#custom-notification {
+    font-family: "NotoSansMono Nerd Font";
 }
-
-#mpris {
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 5px;
-    border-radius: 100px;
-    background-color: @primary;
-    color: #121212;
-}
-
-#bluetooth {
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: 5px;
-}
-
 
 #network {
+    margin-right: 5px;
+}
+
+#custom-niflveil, 
+#audio,
+#custom-notification,
+#bluetooth,
+#network {
     padding-right: 15px;
-    padding-left: 5px;
+    padding-left: 15px;
+    
+}
+
+#settings{
     margin-right: 10px;
-    margin-left: 5px;
+    border: 4px solid @on_secondary_fixed_variant;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
 }
 
-#custom-weather {
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 5px;
-    border-radius: 100px;
-    background-color: @primary;
-    color: #121212;
-}
-
-#custom-niflveil {
-    padding: 0 15px;
-    color: @primary;
-}
-
-#custom-niflveil.empty {
-    color: #4c566a;
-}
 
 
 
